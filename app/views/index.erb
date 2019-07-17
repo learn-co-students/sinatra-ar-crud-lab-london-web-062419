@@ -1,0 +1,11 @@
+<h2>This is the "index" page, showing all the film titles:</h2>
+<ul>
+<% @articles.each do |article| %>
+<li>
+<a href= "/articles/<%= article.id %>">
+
+<%= article.title %>
+</li>
+</a>
+<%end%>
+</ul>

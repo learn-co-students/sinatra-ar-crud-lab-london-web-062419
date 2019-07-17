@@ -2,7 +2,7 @@
 <!-- Will show the title of the article -->
 <%= @article.content %>
 <!-- now to add the form section -->
-<form method="post" action="/articles/<%= @article.id %>">
-<input type="hidden" name="_method" value="delete"
-<input type="submit" />
+<form class="" action="/articles/<%= @article.id %>" method="post">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" name="" value="Delete Article">
 </form>

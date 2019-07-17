@@ -1,0 +1,8 @@
+<h1><%= @article.title %></h1>
+<!-- Will show the title of the article -->
+<%= @article.content %>
+<!-- now to add the form section -->
+<form method="post" action="/articles/<%= @article.id %>">
+<input type="hidden" name="_method" value="delete"
+<input type="submit" />
+</form>

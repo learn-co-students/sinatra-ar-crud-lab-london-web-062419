@@ -1,0 +1,7 @@
+<!-- Now need to show all of the articles, so need to iterate through Article -->
+<h2>Articles</h2>
+<% @articles.each do |article| %>
+    <!-- Now need to grab the link -->
+<a href="/articles/<%= article.id %>"><%= article.title %>
+</a>
+    <% end %>
